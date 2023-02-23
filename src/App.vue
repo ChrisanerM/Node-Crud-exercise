@@ -1,10 +1,21 @@
 <template>
-  <nav>
+  
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <router-link to="/about">About</router-link> -->
+    <div id = "app" class="container is-max-desktop">   
   <router-view/>
+  </div>
 </template>
+
+<script>
+
+
+export default {
+  name: "App",
+};
+</script>
+
 
 <style>
 #app {
@@ -27,4 +38,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
